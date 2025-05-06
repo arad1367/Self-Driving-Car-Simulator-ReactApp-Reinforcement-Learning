@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Self-Driving Car Reinforcement Learning Simulation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pejman-ebrahimi-4a60151a7/)
+[![HuggingFace](https://img.shields.io/badge/🤗_Hugging_Face-FFD21E?style=for-the-badge)](https://huggingface.co/arad1367)
+[![Website](https://img.shields.io/badge/Website-008080?style=for-the-badge&logo=About.me&logoColor=white)](https://arad1367.github.io/pejman-ebrahimi/)
+[![University](https://img.shields.io/badge/University-00205B?style=for-the-badge&logo=academia&logoColor=white)](https://www.uni.li/pejman.ebrahimi?set_language=en)
 
-## Available Scripts
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Controls](#controls)
+- [Reinforcement Learning Parameters](#reinforcement-learning-parameters)
+- [How to Use](#how-to-use)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [Contact](#contact)
 
-In the project directory, you can run:
+## Introduction
 
-### `yarn start`
+This project is a self-driving car simulation that demonstrates reinforcement learning principles. The simulation allows users to switch between manual control and AI training mode, where a reinforcement learning agent learns to navigate to a goal position while avoiding obstacles.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Designed by Pejman Ebrahimi, this educational tool visualizes how different RL parameters affect learning behavior in a practical environment.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `yarn test`
+- Interactive 3D environment built with React Three Fiber
+- Switch between manual control and AI training modes
+- Adjustable reinforcement learning parameters
+- Real-time visualization of Q-table and reward history
+- Realistic car physics with natural controls
+- Sensor system for environment detection
+- Visual feedback for speed, acceleration, and braking
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Controls
 
-### `yarn build`
+### Manual Mode
+- **Arrow Keys** or **WASD**: Control the car
+  - Up/W: Accelerate
+  - Down/S: Brake
+  - Left/A: Turn left
+  - Right/D: Turn right
+- Car has realistic physics with:
+  - Gradual acceleration and deceleration
+  - Speed-dependent turning (less responsive at high speeds)
+  - Inertia and momentum
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### AI Mode
+- Toggle "AI Mode" checkbox
+- Click "Start Training" to begin the learning process
+- Watch as the agent learns to navigate to the goal
+- Adjust parameters to see how they affect learning
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Reinforcement Learning Parameters
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Learning Rate (α)**: How quickly the agent updates its knowledge
+  - Higher values: Faster learning but potentially unstable
+  - Lower values: More stable but slower learning
 
-### `yarn eject`
+- **Gamma (Discount Factor)**: How much the agent values future rewards vs. immediate ones
+  - Higher values: More focus on long-term goals
+  - Lower values: More focus on immediate rewards
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Episodes**: Number of training runs to perform
+  - Higher values: More thorough learning
+  - Lower values: Faster overall training
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository
+2. Install dependencies with `yarn install`
+3. Start the development server with `yarn start`
+4. Use the controls panel to adjust parameters
+5. Switch between manual and AI modes
+6. Press the "Reset" button to start over
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+- React.js
+- Three.js / React Three Fiber
+- JavaScript ES6+
+- Reinforcement Learning (Q-Learning algorithm)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Screenshots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Car Simulation 1](./IMG/Car1.png)
+*Manual Mode - Control the car using arrow keys or WASD*
 
-### Code Splitting
+![Car Simulation 2](./IMG/Car2.png)
+*AI Training Mode - Watch the agent learn to navigate to the goal*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Car Simulation 3](./IMG/Car3.png)
+*Parameter Controls - Adjust learning parameters to see their effects*
 
-### Analyzing the Bundle Size
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Designed and developed by Pejman Ebrahimi.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: pejman.ebrahimi@uni.li
+- LinkedIn: [Pejman Ebrahimi](https://www.linkedin.com/in/pejman-ebrahimi-4a60151a7/)
+- Website: [arad1367.github.io/pejman-ebrahimi](https://arad1367.github.io/pejman-ebrahimi/)
+- University: [University of Liechtenstein](https://www.uni.li/pejman.ebrahimi?set_language=en)
+- Hugging Face: [arad1367](https://huggingface.co/arad1367)
