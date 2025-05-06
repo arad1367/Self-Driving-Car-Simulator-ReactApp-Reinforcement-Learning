@@ -82,13 +82,13 @@ Designed by Pejman Ebrahimi, this educational tool visualizes how different RL p
 
 ## Screenshots
 
-![Car Simulation 1](./IMG/Car1.png)
+![Car Simulation 1](./Car1.png)
 *Manual Mode - Control the car using arrow keys or WASD*
 
-![Car Simulation 2](./IMG/Car2.png)
+![Car Simulation 2](./Car2.png)
 *AI Training Mode - Watch the agent learn to navigate to the goal*
 
-![Car Simulation 3](./IMG/Car3.png)
+![Car Simulation 3](./Car3.png)
 *Parameter Controls - Adjust learning parameters to see their effects*
 
 ## Contact
